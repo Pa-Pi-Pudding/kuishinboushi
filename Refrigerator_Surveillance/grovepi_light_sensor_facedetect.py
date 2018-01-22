@@ -154,9 +154,8 @@ def light_sensor():
     grovepi.pinMode(light_sensor, "INPUT")
     #py = subprocess.Popen(['python','pasori.py'])
 
-
     while True:
-        try:
+        try:# 光センサーで光量をとる
             sensor_value = grovepi.analogRead(light_sensor)
             resistance = (float)(1023 - sensor_value) * 5 / sensor_value
             time.sleep(.5)
