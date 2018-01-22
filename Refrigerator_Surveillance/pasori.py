@@ -15,8 +15,8 @@ system_code = 0xFE00
 
 #データベースなどを使う予定    
 list ={
-    "15NC010":"UCHIDA KYOTA",
-    "15NC012":"aaaaaa",
+    "mogemoge":"hoge hoge",
+    "mogemoge":"aaaaaa",
     }
 mlist = ["15NC010", "15NC012"]
 
