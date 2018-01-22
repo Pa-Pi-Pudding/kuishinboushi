@@ -95,6 +95,8 @@ def cut_image():
 
     face_undetected_count = 0
     for file_name in files:
+        if os.path.isdir("./Done/")== False:
+                    os.path.makedirs("./Done/")
         try: 
             if os.path.isfile(FLAGS.input_dir + file_name):
         
@@ -131,10 +133,14 @@ def cut_image():
 
 def taken_photo():
     camera = cv2.VideoCapture(0)
+    if os.path.isdir("./inputs/")== False:
+        os.path.makedirs("./inputs")
+
     for i in range(5):
         r, img = camera.read()
         time.sleep(0.5)
         photo = 'image%04d.jpg' % i
+
         cv2.imwrite(os.path.join(FLAGS.input_dir, photo), img)
                        
         print('taked phote')
@@ -147,6 +153,8 @@ def light_sensor():
     threshold = 1
     grovepi.pinMode(light_sensor, "INPUT")
     #py = subprocess.Popen(['python','pasori.py'])
+
+
     while True:
         try:
             sensor_value = grovepi.analogRead(light_sensor)
