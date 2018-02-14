@@ -1,5 +1,5 @@
-#食いしん防止
-RaspberryPi3とGrovePi+lightsensorとUSBカメラを使った顔認識
+食いしん防止<br>
+RaspberryPi3とGrovePi+lightsensorとUSBカメラとOpenCVを使った顔認識とpasoriを使用
 <br>
 機能<br>
 光センサーで値をとってそれが一定値を超えた場合にUSBカメラで５枚ほど撮影をする<br>
