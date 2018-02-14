@@ -13,7 +13,7 @@ class Felica_reader(object):
     TDU = ["NE", "NC", "NM", "EJ", "EK", "EH", "ES", "EF", "EC", "FI""FA", "FR", "AJ", "AD", "JK", "JKM", "RMU", "RMD","RMB", "RMT", "RMG", "RU", "RD", "RB", "RT", "RG",]
     system_code = 0xFE00
     TIMEOUT_SEC = 5 
-    mlist = ["15NC010", "aaaaaaaa"]
+    mlist = ["00NC000", "00EJ000"]
     
     def on_connect(self,tag):
         print '\n'.join(tag.dump())
