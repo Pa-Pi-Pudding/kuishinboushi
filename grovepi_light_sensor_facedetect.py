@@ -81,7 +81,7 @@ class LightSensor(object):
 
     files =  os.listdir(FLAGS.input_dir)
     # -------------slacker---------------------   
-    token = "xoxp-297365796705-297365796865-301035400788-1745f628725456ca54ff66b8b6f9a4fd"
+    token = "####-#############-#####################-#########################"
     slacker = Slacker(token)
     channel_name = "#" + "general"
     
