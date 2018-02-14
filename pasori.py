@@ -15,10 +15,10 @@ system_code = 0xFE00
 
 #データベースなどを使う予定    
 list ={
-    "15NC010":"UCHIDA KYOTA",
-    "15NC012":"aaaaaa",
+    "hoge hoge":"moge moge",
+    "00NC000":"00NE000",
     }
-mlist = ["15NC010", "15NC012"]
+mlist = ["00NC000", "00NE000"]
 
 def on_connect(tag):
     
@@ -49,9 +49,6 @@ def comparison(data1, data2):
             name = data2.decode('UTF-8')[0:name_locate]
             
             if mlist.count(num) <= 1:
-                print("学生です")
-      #      print name
-        #    print num    thread_1 = threading.Thread(target = main)
             
 def main():
         try:
